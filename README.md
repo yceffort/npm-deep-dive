@@ -41,12 +41,13 @@
 ## 7. 폴리필과 트랜스파일은 무엇일까? 
 
 - babel (swc)
-- rollup (turbopack)
+- corejs
 
 ## 8. 패키지 번들링 도구 알아보기
 
 - vite
 - rollup
+- 그밖의 대안 (snowpack, esbuild, etc.)
 
 ## 9. 직접 자바스크립트 라이브러리 만들어보기
 
