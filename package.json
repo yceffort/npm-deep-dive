@@ -1,0 +1,29 @@
+{
+  "name": "npm-deep-dive",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "md": "markdownlint-cli2 '**/*.md' '#node_modules'",
+    "md:fix": "markdownlint-cli2-fix '**/*.md' '#node_modules'",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install",
+    "prettier": "prettier '**/*.{md,json}' --check",
+    "prettier:fix": "prettier '**/*.{md,json}' --write",
+    "fix": "pnpm run prettier:fix && pnpm run md:fix"
+  },
+  "author": "yceffort <root@yceffort.kr>",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@titicaca/prettier-config-triple": "^1.0.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "markdownlint-cli2": "^0.7.1",
+    "prettier": "^2.8.8"
+  },
+  "engines": {
+    "node": "^18.17.10",
+    "pnpm": "^8.6.0"
+  }
+}
