@@ -1,0 +1,6 @@
+{
+  "**/*.md": [
+    "prettier --write",
+    "markdownlint-cli2-fix '**/*.md' '#node_modules'"
+  ]
+}
